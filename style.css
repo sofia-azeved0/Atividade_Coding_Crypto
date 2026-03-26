@@ -1,0 +1,163 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo do site */
+body {
+    background: #0d1117;
+    background: linear-gradient(135deg, #0d1117 0%, #1c2533 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #c9d1d9;
+}
+
+/* Efeito de luz no fundo */
+.background-blobs {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#3a4a66, #1c2533);
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: -1;
+    animation: moveBlobs 12s infinite alternate ease-in-out;
+    opacity: 0.4;
+}
+
+@keyframes moveBlobs {
+    from { transform: translate(-40%, -40%); }
+    to { transform: translate(40%, 40%); }
+}
+
+/* Painel central (Efeito de vidro) */
+.glass-container {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Títulos */
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Destaque no nome */
+header h1 span {
+    color: #58a65c;
+    text-shadow: 0 0 10px rgba(88, 166, 92, 0.2);
+}
+
+/* Texto de status */
+#status {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #8b949e;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Lista das moedas */
+#crypto-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cards individuais */
+.coin-card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no card */
+.coin-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+/* Info da moeda */
+.coin-info { text-align: left; }
+
+.coin-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.coin-symbol {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Preço em verde */
+.coin-price {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #58a65c;
+    text-shadow: 0 0 5px rgba(88, 166, 92, 0.15);
+}
+
+/* Mensagem de carregando */
+.loader {
+    font-size: 0.9rem;
+    color: #8b949e;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* Botão de atualizar */
+button {
+    margin-top: 30px;
+    width: 100%;
+    background: linear-gradient(135deg, #1c2533 0%, #21262d 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover do botão */
+button:hover {
+    background: linear-gradient(135deg, #21262d 0%, #1c2533 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Clique do botão */
+button:active {
+    transform: translateY(0);
+}
