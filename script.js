@@ -1,3 +1,4 @@
+/* Seleção dos elementos do HTML */
 const cryptoList = document.getElementById('crypto-list');
 const btnAtualizar = document.querySelector('button');
 
@@ -11,6 +12,12 @@ const moedas = [
 
 /* Função para buscar os dados do Mercado Bitcoin */
 async function buscarPrecos() {
+    
+    /* Recurso de Hardware: Vibração do celular ao atualizar */
+    if (navigator.vibrate) {
+        navigator.vibrate(50); 
+    }
+
     // Mensagem de carregando
     cryptoList.innerHTML = '<div class="loader">Sincronizando...</div>';
     
@@ -54,6 +61,18 @@ async function buscarPrecos() {
         cryptoList.innerHTML = '<p style="color: #ff4d4d">Erro ao conectar com o servidor. Tente novamente.</p>';
     }
 }
+
+/* Registro do Service Worker para o PWA */
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registrado!'))
+            .catch(err => console.log('Erro no Service Worker', err));
+    });
+}
+
+/* Evento do botão de atualizar */
+btnAtualizar.addEventListener('click', buscarPrecos);
 
 /* Chama a função assim que a página abre */
 buscarPrecos();

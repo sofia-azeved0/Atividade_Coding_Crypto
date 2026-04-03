@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CryptoGlass - Monitor em Tempo Real</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div
-            class="background-blobs">
-        </div>
-        <main class="glass-container">
-            <header>
-                <h1>Crypto<span>ADS</span></h1>
-                <p id="status">● Conectado ao Mercado</p>
-            </header>
-            <section id="crypto-list">
-                <div class="loader">Sincronizando...</div>
-            </section>
-            <footer>
-                <button onclick="buscarPrecos()">Atualizar Agora</button>
-            </footer>
-        </main>
-        <script src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Crypto - Monitor em Tempo Real</title>
+    <meta name="description" content="Monitor de Criptomoedas em tempo real para a disciplina de Coding Mobile.">
+    <meta name="theme-color" content="#0d1117">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2091/2091665.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs"></div>
+
+    <main class="glass-container">
+        <header>
+            <h1>Crypto<span></span></h1>
+            <p id="status">Conectado ao Mercado</p>
+        </header>
+
+        <section id="crypto-list">
+            <div class="loader">Sincronizando...</div>
+        </section>
+
+        <footer>
+            <button title="Atualizar preços agora">Atualizar Agora</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
