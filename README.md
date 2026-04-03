@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como atividade acadêmica para o curso de **Análise e Desenvolvimento de Sistemas (ADS)**, com foco em desenvolvimento web moderno, consumo de APIs reais, tecnologias PWA (Progressive Web App) e integração com hardware do dispositivo.
 
-🔗 **Acesse o projeto aqui:** [https://sofia-azevedo.github.io/Atividade_Coding_Crypto/](https://sofia-azevedo.github.io/Atividade_Coding_Crypto/)
+🔗 **Acesse o projeto aqui:** [https://sofia-azeved0.github.io/Atividade_Coding_Crypto/](https://sofia-azeved0.github.io/Atividade_Coding_Crypto/)
 
 ## ⚙️ Funcionalidades e Diferenciais Técnicos
 - **Consulta em Tempo Real:** Consumo de dados assíncronos via Fetch API do Mercado Bitcoin.
