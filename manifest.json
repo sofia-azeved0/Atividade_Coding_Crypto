@@ -1,0 +1,15 @@
+{
+  "name": "CryptoADS Monitor",
+  "short_name": "CryptoADS",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#1c2533",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2091/2091665.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
