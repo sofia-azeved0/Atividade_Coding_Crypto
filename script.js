@@ -74,8 +74,5 @@ if ('serviceWorker' in navigator) {
 /* Evento do botão de atualizar */
 btnAtualizar.addEventListener('click', buscarPrecos);
 
-/* Chama a função assim que a página abre */
-buscarPrecos();
-
 /* Atualiza os dados automaticamente a cada 30 segundos */
 setInterval(buscarPrecos, 30000);
